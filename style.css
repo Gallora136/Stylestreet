@@ -12,7 +12,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #eed5af;
-    height: 100vh;
 }
 
 /* Navigation */
@@ -79,7 +78,7 @@ p {
     text-decoration: none;
     font-size: 32px;
     padding: 20px 40px;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 h2 {
@@ -99,12 +98,66 @@ h2 {
     flex-wrap: wrap;
 }
 
+.featured {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
 .featured-collections img {
     width: 250px;
     height: 300px;
     object-fit: cover;
     border-radius: 15px;
 }
+
+/* Page 2 */
+.collections {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.normal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.collections img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.shop-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    background: #a89073;
+    border-radius: 7px;
+}
+
+.shop-icon img {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
+
+h3 ~ p {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    margin: 0;
+}
+
 
 /* Tablet Responsiveness (768px and below) */
 @media (max-width: 768px) {
@@ -149,6 +202,16 @@ h2 {
     .featured-collections img {
         width: 200px;
         height: 240px;
+    }
+
+    .shop-icon {
+        width: 80px;
+        height: 40px;
+    }
+
+    .shop-icon img {
+        width: 40px;
+        height: 40px;
     }
 
     .homepage {
@@ -209,6 +272,16 @@ h2 {
     .featured-collections img {
         width: 150px;
         height: 180px;
+    }
+
+    .shop-icon {
+        width: 70px;
+        height: 35px;
+    }
+
+    .shop-icon img {
+        width: 35px;
+        height: 35px;
     }
 
     .homepage {
